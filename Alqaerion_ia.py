@@ -1,0 +1,111 @@
+from asyncio import run_coroutine_threadsafe
+import tensorflow as tf
+import numpy as np
+
+def main():
+    print(f"TensorFlow Version: {tf.__version__}")
+    gpus = tf.config.list_physical_devices('GPU')
+    if gpus:
+        print(f"GPUs disponibles: {gpus}")
+        try:
+            for gpu in gpus:
+                tf.config.experimental.set_memory_growth(gpu, True)
+            print("Crecimiento de memoria habilitado para GPUs.")
+        except RuntimeError as e:
+            print(f"Error al habilitar crecimiento de memoria: {e} (esto es normal si ya se inicializaron las GPUs)")
+    else:
+        print("No se encontraron GPUs, se usará CPU.")
+
+    # 1. Definición del Modelo
+    # Modelo secuencial con una capa de entrada de 64 unidades (para 64 características),
+    # una capa oculta y una capa de salida con 1 unidad y activación sigmoide para clasificación binaria.
+    model = tf.keras.models.Sequential([
+        tf.keras.layers.Dense(units=64, activation='relu', input_shape=(64,)),
+        tf.keras.layers.Dense(units=32, activation='relu'), # Capa oculta adicional
+        tf.keras.layers.Dense(units=1, activation='sigmoid')
+    ])
+
+    print("\n--- Resumen del Modelo ---")
+    model.summary()
+
+    # 2. Compilación del Modelo
+    model.compile(optimizer='adam',
+                  loss='binary_crossentropy',
+                  metrics=['accuracy'])
+    print("\nModelo compilado.")
+
+    # 3. Preparación de Datos de Ejemplo
+    # 100 muestras, 64 características por muestra
+    x_train = np.random.rand(100, 64)
+    # 100 etiquetas, valores 0 o 1 (clasificación binaria)
+    y_train = np.random.randint(0, 2, 100)
+    print(f"\nForma de x_train: {x_train.shape}")
+    print(f"Forma de y_train: {y_train.shape}")
+
+    # 4. Entrenamiento del Modelo
+    print("\n--- Iniciando Entrenamiento ---")
+    history = model.fit(x_train, y_train, epochs=10, verbose=1) # verbose=1 para ver el progreso por época
+    print("\n--- Entrenamiento Completado ---")
+
+    # Opcional: Mostrar historial de entrenamiento
+    print("\nHistorial de entrenamiento (pérdida y exactitud por época):")
+    for epoch in range(len(history.history['loss'])):
+        print(f"Epoch {epoch+1}: loss = {history.history['loss'][epoch]:.4f}, accuracy = {history.history['accuracy'][epoch]:.4f}")
+
+if __name__ == '__main__':
+    main()
+EnvironmentNameNotFound: Could not find conda environment# type: ignore # HolaMundo.py
+print("Hola Mundo"): uwpico
+You # filepath: /Users/nican = True  # Definir la variable
+if can:
+    print("La variable 'can' está definida y es True.") list all discoverable environments with `conda info --envs`.
+
+
+ /usr/bin/env /Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsI
+nombre_del_entorno(base) nicolasssuarez@MacBook-Air-de-Nicolas ~ %  /usr/bin/env /Library/Java/JavaVirtualM
+achines/temurin-21.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/nicolasssu
+arez/Library/Application\ Support/Code/User/workspaceStorage/ce5ef5040ebcde4a6f36d47ad073dda1/redhat.java/j # type: ignore
+dt_ws/jdt.ls-java-project/bin ZipExtractor 
+Error al descomprimir el archivo: run_coroutine_threadsafe/a/tu/archivo.zip (No such file or directory) # type: ignore
+nombre_del_entorno(base) nicolasssuarez@MacBook-Air-de-Nicolas ~ % 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
