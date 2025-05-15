@@ -1,3 +1,4 @@
+from asyncio import run_coroutine_threadsafe
 import tensorflow as tf
 import numpy as np
 
@@ -52,12 +53,22 @@ def main():
         print(f"Epoch {epoch+1}: loss = {history.history['loss'][epoch]:.4f}, accuracy = {history.history['accuracy'][epoch]:.4f}")
 
 if __name__ == '__main__':
-    main()nombre_del_entorno(base) nicolasssuarez@MacBook-Air-de-Nicolas ~ %  /usr/bin/env /Library/Java/JavaVirtualM
+    main()
+EnvironmentNameNotFound: Could not find conda environment# type: ignore # HolaMundo.py
+print("Hola Mundo"): uwpico
+You # filepath: /Users/nican = True  # Definir la variable
+if can:
+    print("La variable 'can' está definida y es True.") list all discoverable environments with `conda info --envs`.
+
+
+ /usr/bin/env /Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsI
+nombre_del_entorno(base) nicolasssuarez@MacBook-Air-de-Nicolas ~ %  /usr/bin/env /Library/Java/JavaVirtualM
 achines/temurin-21.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/nicolasssu
 arez/Library/Application\ Support/Code/User/workspaceStorage/ce5ef5040ebcde4a6f36d47ad073dda1/redhat.java/j # type: ignore
 dt_ws/jdt.ls-java-project/bin ZipExtractor 
 Error al descomprimir el archivo: run_coroutine_threadsafe/a/tu/archivo.zip (No such file or directory) # type: ignore
 nombre_del_entorno(base) nicolasssuarez@MacBook-Air-de-Nicolas ~ % 
+
 
 
 
